@@ -13,11 +13,9 @@ This project analyzes a dataset of automobile data to explore the relationships 
 
 1. Clone this repository.
 2. Install the required libraries:
-```pip install numpy pandas matplotlib seaborn scikit-learn
-```
+```pip install numpy pandas matplotlib seaborn scikit-learn```
 3. Run the script:
-```python automobile_data_analysis.py
-```
+```python automobile_data_analysis.py```
 This will generate plots and print the model evaluation metrics.
 ## License
 
