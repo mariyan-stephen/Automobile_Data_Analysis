@@ -68,5 +68,20 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 mse = mean_squared_error(y_test, y_pred)
 r2 = r2_score(y_test, y_pred)
+
+# Set plot size and font size
+plt.figure(figsize=(16, 12))  # You can adjust these values (16, 12) to change the plot size
+sns.set(font_scale=0.8)  # You can adjust this value to change the font size
+
+# Generate a heatmap for the correlation matrix
+heatmap_plot = sns.heatmap(corr_matrix, annot=True, cmap="coolwarm", fmt='.2f', linewidths=.5)
+
+# Save the heatmap as an image
+plt.savefig('heatmap_plot.png', dpi=300, bbox_inches='tight')
+
+# Print Mean Squared Error and R-squared values
 print("Mean Squared Error:", mse)
 print("R-squared:", r2)
+
+# Display the plot in the console
+plt.show()
