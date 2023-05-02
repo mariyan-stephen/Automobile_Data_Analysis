@@ -2,6 +2,12 @@
 
 This project analyzes a dataset of automobile data to explore the relationships between different features and predict car prices using a simple linear regression model.
 
+## Heatmap Plot
+
+Here's the heatmap plot showing the correlation between various features:
+
+![heatmap_plot](./heatmap_plot.png)
+
 ## Features
 
 - Data cleaning and preprocessing
